@@ -9,22 +9,7 @@ import SwiftUI
 
 struct ContentView: View {
     var body: some View {
-        VStack {
-            Text("Hello Jay")
-                .bold()
-                .italic()
-                .strikethrough()
-            Text("Hello Jay")
-                .font(.system(size: 60))
-            Text("Hello Jay")
-                .underline(true, color: .orange)
-                .foregroundColor(.red)
-                .background(.purple)
-            Text("Hello Jay")
-                .foregroundColor(.green)
-                .bold()
-                .font(.system(size: 39, weight: .bold, design: .serif))
-        }
+        Image("swift-og")
     }
 }
 
