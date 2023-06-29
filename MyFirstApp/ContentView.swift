@@ -9,25 +9,20 @@ import SwiftUI
 
 struct ContentView: View {
     var body: some View {
-        ZStack() {
-            //안에는 10개만 들어갈 수 있다.
-            Text("1")
-            Text("2")
-            Text("3")
-                .background(.blue)
-            Text("1")
-            Text("2")
-            Text("3")
-                .background(.blue)
-            Text("1")
-            Text("2")
-            Text("3")
-                .background(.blue)
-            Text("1")
-            
+        ScrollView(.horizontal) {
+            HStack {
+                Text("1")
+                    .frame(width: 300, height: 500)
+                    .background(.red)
+                Text("2")
+                    .frame(width: 300, height: 500)
+                    .background(.blue)
+                Text("3")
+                    .frame(width: 300, height: 500)
+                    .background(.orange)
+            }
         }
-        .frame(width: 300, height: 200)
-        .background(.orange)
+        .background(.yellow)
     }
 }
 
