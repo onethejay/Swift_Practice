@@ -9,8 +9,8 @@ import SwiftUI
 
 struct ContentView: View {
     var body: some View {
-        ScrollView(.horizontal) {
-            HStack {
+        ScrollView {
+            VStack {
                 Text("1")
                     .frame(width: 300, height: 500)
                     .background(.red)
