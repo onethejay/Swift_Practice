@@ -9,11 +9,11 @@
 /* Begin PBXBuildFile section */
 		14A007662A4B1197006C2EC1 /* MyFirstAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14A007652A4B1197006C2EC1 /* MyFirstAppApp.swift */; };
 		14A007682A4B1197006C2EC1 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14A007672A4B1197006C2EC1 /* ContentView.swift */; };
-		14A0076A2A4B1198006C2EC1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 14A007692A4B1198006C2EC1 /* Assets.xcassets */; };
 		14A0076D2A4B1198006C2EC1 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 14A0076C2A4B1198006C2EC1 /* Preview Assets.xcassets */; };
 		14A007772A4B1198006C2EC1 /* MyFirstAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14A007762A4B1198006C2EC1 /* MyFirstAppTests.swift */; };
 		14A007812A4B1198006C2EC1 /* MyFirstAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14A007802A4B1198006C2EC1 /* MyFirstAppUITests.swift */; };
 		14A007832A4B1198006C2EC1 /* MyFirstAppUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14A007822A4B1198006C2EC1 /* MyFirstAppUITestsLaunchTests.swift */; };
+		14B08D622A55BE1400D773DA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 14A007692A4B1198006C2EC1 /* Assets.xcassets */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -231,8 +231,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				14B08D622A55BE1400D773DA /* Assets.xcassets in Resources */,
 				14A0076D2A4B1198006C2EC1 /* Preview Assets.xcassets in Resources */,
-				14A0076A2A4B1198006C2EC1 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

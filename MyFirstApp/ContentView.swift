@@ -8,89 +8,41 @@
 import SwiftUI
 
 struct ContentView: View {
+        
+    @State var isLighting: Bool = false
+    
     var body: some View {
         
-        List {
+        ZStack {
+            Color.yellow.edgesIgnoringSafeArea(.all)
             
-            Section {
-                Section {
-                    HStack {
-                        Image(systemName: "heart")
-                        Text("Jay")
-                    }
+            VStack {
+                Spacer()
+                
+                Image(systemName: isLighting ? "bolt.fill" : "bolt")
+                    .resizable()
+                    .aspectRatio(contentMode: .fit)
+                    .frame(width: 200)
+                
+                Spacer()
+                
+                HStack {
+                    Text("번개를 원하시면")
                     
-                    HStack {
-                        Image(systemName: "heart.fill")
-                        Text("Jay")
+                    Button {
+                        isLighting.toggle()
+                    } label: {
+                        Text("번쩍!")
+                            .padding()
+                            .background(.orange)
+                            .cornerRadius(10)
                     }
-                    
-                    HStack {
-                        Image(systemName: "bolt")
-                        Text("Jay")
-                    }
-                }
-            } header: {
-                VStack {
-                    HStack {
-                        Image(systemName: "bolt")
-                        Text("A Class")
-                    }
-                    HStack {
-                        Image(systemName: "bolt")
-                        Text("A Class")
-                    }
+
                 }
                 
-//                Text("A Class") //헤더에 들어가는 텍스트는 항상 대문자
-                
-            } footer: {
-                Text("Footer")
-            }
-            
-            Section {
-                Section {
-                    HStack {
-                        Image(systemName: "heart")
-                        Text("Jay")
-                    }
-                    
-                    HStack {
-                        Image(systemName: "heart.fill")
-                        Text("Jay")
-                    }
-                    
-                    HStack {
-                        Image(systemName: "bolt")
-                        Text("Jay")
-                    }
-                }
-            } header: {
-                Text("Header")
-            }
-            
-            Section {
-                Section {
-                    HStack {
-                        Image(systemName: "heart")
-                        Text("Jay")
-                    }
-                    
-                    HStack {
-                        Image(systemName: "heart.fill")
-                        Text("Jay")
-                    }
-                    
-                    HStack {
-                        Image(systemName: "bolt")
-                        Text("Jay")
-                    }
-                }
-            } header: {
-                Text("C Class")
-            } footer: {
-                Text("Copy right by Jay")
             }
         }
+        
     }
 }
 
