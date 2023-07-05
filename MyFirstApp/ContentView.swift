@@ -9,20 +9,88 @@ import SwiftUI
 
 struct ContentView: View {
     var body: some View {
-        ScrollView {
-            VStack {
-                Text("1")
-                    .frame(width: 300, height: 500)
-                    .background(.red)
-                Text("2")
-                    .frame(width: 300, height: 500)
-                    .background(.blue)
-                Text("3")
-                    .frame(width: 300, height: 500)
-                    .background(.orange)
+        
+        List {
+            
+            Section {
+                Section {
+                    HStack {
+                        Image(systemName: "heart")
+                        Text("Jay")
+                    }
+                    
+                    HStack {
+                        Image(systemName: "heart.fill")
+                        Text("Jay")
+                    }
+                    
+                    HStack {
+                        Image(systemName: "bolt")
+                        Text("Jay")
+                    }
+                }
+            } header: {
+                VStack {
+                    HStack {
+                        Image(systemName: "bolt")
+                        Text("A Class")
+                    }
+                    HStack {
+                        Image(systemName: "bolt")
+                        Text("A Class")
+                    }
+                }
+                
+//                Text("A Class") //헤더에 들어가는 텍스트는 항상 대문자
+                
+            } footer: {
+                Text("Footer")
+            }
+            
+            Section {
+                Section {
+                    HStack {
+                        Image(systemName: "heart")
+                        Text("Jay")
+                    }
+                    
+                    HStack {
+                        Image(systemName: "heart.fill")
+                        Text("Jay")
+                    }
+                    
+                    HStack {
+                        Image(systemName: "bolt")
+                        Text("Jay")
+                    }
+                }
+            } header: {
+                Text("Header")
+            }
+            
+            Section {
+                Section {
+                    HStack {
+                        Image(systemName: "heart")
+                        Text("Jay")
+                    }
+                    
+                    HStack {
+                        Image(systemName: "heart.fill")
+                        Text("Jay")
+                    }
+                    
+                    HStack {
+                        Image(systemName: "bolt")
+                        Text("Jay")
+                    }
+                }
+            } header: {
+                Text("C Class")
+            } footer: {
+                Text("Copy right by Jay")
             }
         }
-        .background(.yellow)
     }
 }
 
